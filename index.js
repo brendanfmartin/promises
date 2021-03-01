@@ -1,17 +1,4 @@
-/**
- * Fake API call w/ custom timeout
- * @param time
- * @returns {Promise<unknown>}
- */
-const fakeApiCall = async (time) => {
-  return new Promise((resolve) => {
-    return setTimeout(() => {
-      const message = `fakeApiCall finished in ${time}ms`;
-      console.log(message);
-      resolve(message);
-    }, time);
-  });
-};
+const { fakeApiCall } = require('./lib/http');
 
 /**
  * calling multiple promises
