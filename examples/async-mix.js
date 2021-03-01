@@ -1,4 +1,4 @@
-const { fakeApiCall } = require('../lib/http');
+const { fakeApiCall, fakeFailedApiCall } = require('../lib/http');
 
 /**
  * three things happen here
