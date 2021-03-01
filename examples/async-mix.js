@@ -22,14 +22,16 @@ const fakeHandler = async () => {
 
   // sending
   try {
-    await Promise.allSettled([fakeApiCall(Math.random()), fakeApiCall(Math.random())])
+    const r = await Promise.allSettled([fakeFailedApiCall(Math.random()), fakeApiCall(Math.random())])
+    console.log(r)
   } catch (e) {
     console.error(e)
   }
 
   // deleting
   try {
-    await Promise.allSettled([fakeApiCall(Math.random()), fakeApiCall(Math.random())])
+    const r = await Promise.allSettled([fakeApiCall(Math.random()), fakeApiCall(Math.random())])
+    console.log(r)
   } catch (e) {
     console.error(e)
   }
