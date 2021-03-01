@@ -20,6 +20,19 @@ const fakeHandler = async () => {
     console.error(e)
   }
 
+  // sending
+  try {
+    await Promise.allSettled([fakeApiCall(Math.random()), fakeApiCall(Math.random())])
+  } catch (e) {
+
+  }
+
+  // deleting
+  try {
+
+  } catch (e) {
+
+  }
 
 };
 
