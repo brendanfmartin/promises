@@ -4,8 +4,12 @@
   "description": "playground for promises ",
   "main": "index.js",
   "scripts": {
+    "docs": "./node_modules/jsdoc/jsdoc.js -c ./.jsdoc.conf.json README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^3.6.6"
+  }
 }
